@@ -1,12 +1,5 @@
 # Power BI REST api 데이터 가져오기
 
-### 개요
-
-[API 인증키/URL 생성](https://www.notion.so/Power-BI-REST-api-72d3317959c74474bfb906a7095d7846?pvs=21)
-
-[powerbi, R라이브러리 활용](https://www.notion.so/Power-BI-REST-api-72d3317959c74474bfb906a7095d7846?pvs=21)
-
-[주의점, 참고](https://www.notion.so/Power-BI-REST-api-72d3317959c74474bfb906a7095d7846?pvs=21)
 
 ### API 인증키/URL 생성
 
