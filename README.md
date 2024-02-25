@@ -20,7 +20,7 @@
     
     - 활용 목적 및 저작자 표시, 활용 기간 확인
         
-        ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled.png)
+        ![Untitled](img/Untitled.png)
         
     
     api 키 생성 및 url 형태로 api 접근 가능
@@ -39,11 +39,11 @@
     
     - 결과값보기에서 기관코드 통계표ID 확인
         
-        ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%201.png)
+        ![Untitled](img/Untitled%201.png)
         
     - 통계자료 > URL 생성에서 기관 및 통계표ID 검색 하여 선택
         
-        ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%202.png)
+        ![Untitled](img/Untitled%202.png)
         
     
     조건 선택 후 URL 생성 > api 키 생성 및 url 형태로 api 접근 가능
@@ -57,15 +57,15 @@
 
 데이터 가져오기 웹 선택 후 생성한 URL 입력
 
-![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%203.png)
+![Untitled](img/Untitled%203.png)
 
 - XML 형식
     
     컬럼이 테이블 형식으로 조회 되기 때문에 정상적으로 보일 때까지 테이블 컬럼은 확장 후 사용
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%204.png)
+    ![Untitled](img/Untitled%204.png)
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%205.png)
+    ![Untitled](img/Untitled%205.png)
     
 
 - JSON 형식
@@ -91,7 +91,7 @@
     
     `소비자물가지수`  완료 테이블
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%206.png)
+    ![Untitled](img//Untitled%206.png)
     
 
 ### R 파이썬 라이브러리 사용
@@ -111,7 +111,7 @@ xml 형식 R
     place <- c(90,93,95,98,99,100,101,102,104,105,106,108,112,114,115,119,121,127,129,130,131,133,135,136,137,138,140,143,146,152,155,156,159,162,165,168,169,170,172,174,177,184,185,188,189,192,201,202,203,211,212,216,217,221,226,232,235,236,238,239,243,244,245,247,248,251,252,253,254,255,257,258,259,260,261,262,263,264,266,268,271,272,273,276,277,
     278,279,281,283,284,285,288,289,294,295)
     
-    api <- paste0("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=",mindate,"&endDt=",maxdate,"&stnIds=",as.character(place[1]))
+    api <- paste0("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={KOSIS_TOKEN}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=",mindate,"&endDt=",maxdate,"&stnIds=",as.character(place[1]))
     
     api -> read_xml(api) %>% 
           as_list() %>% 
@@ -212,7 +212,7 @@ POWER QUERY를 FOR 루프 처럼 사용하기 > 사용자 지정 함수 활용
     
     - table2 아래와 같이 미리 생성 해야 됨
         
-        ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%207.png)
+        ![Untitled](img/Untitled%207.png)
         
 
 - `table1`
@@ -242,25 +242,25 @@ POWER QUERY를 FOR 루프 처럼 사용하기 > 사용자 지정 함수 활용
     
     변경 후 power query 화면은 아래와 같이 변한다. 해당 매개 변수에 올바른 값을 입력하면 기존과 같이 조회 가능
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%208.png)
+    ![Untitled](img/Untitled%208.png)
     
 
 - `table2`
     
     table2로 가서 열 추가 > 사용자 지정 함수 호출
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%209.png)
+    ![Untitled](img/Untitled%209.png)
     
     아래와 같이 변수에 넣을 값을 테이블로 선택,  table2의 각 컬럼이 table1에 변수 값에 들어가서 작동됨
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%2010.png)
+    ![Untitled](img/Untitled%2010.png)
     
     컬럼 생성 후 테이블로 되어 있어 필요한 컬럼으로 확장하여 사용
     
-    ![Untitled](Power%20BI%20REST%20api%20%E1%84%83%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%A1%E1%84%8C%E1%85%A7%E1%84%8B%E1%85%A9%E1%84%80%E1%85%B5%2072d3317959c74474bfb906a7095d7846/Untitled%2011.png)
+    ![Untitled](img/Untitled%2011.png)
     
 
-**>>>>>>>여러 기상청 값 조회 시 응답 지연 문제 발생 - api 제공처 문제로 발생됨, 다른 시간에 시도하거나 for 루프 횟수를 줄이는 방법으로 접근**
+**>여러 기상청 값 조회 시 응답 지연 문제 발생 - api 제공처 문제로 발생됨, 다른 시간에 시도하거나 for 루프 횟수를 줄이는 방법으로 접근**
 
 **통계청 open API 메뉴얼**
 
