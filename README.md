@@ -21,7 +21,7 @@
     
     `예시` 기상청 데이터 XML
     
-    [http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt= 시작일 &endDt= 종료일 &stnIds= 지역](http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=20230101&endDt=20230102&stnIds=108)
+    [http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={your_key}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt= 시작일 &endDt= 종료일 &stnIds= 지역](http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=20230101&endDt=20230102&stnIds=108)
     
 
 - 통계 데이터 수집 : 통계청 데이터
@@ -43,7 +43,7 @@
     
     `예시` 소비자물가지수 JSON
     
-    [https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey=YTI0OTg5OTJjODIwOTBkM2M5ZjhiNTU0MjBhNzc0OTA=&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=시작년월&endPrdDe=마지막년월&orgId=기관&tblId=통계청ID](https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey=YTI0OTg5OTJjODIwOTBkM2M5ZjhiNTU0MjBhNzc0OTA=&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003)
+    [https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={your_key}&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=시작년월&endPrdDe=마지막년월&orgId=기관&tblId=통계청ID](https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey=YTI0OTg5OTJjODIwOTBkM2M5ZjhiNTU0MjBhNzc0OTA=&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003)
     
 
 ### Power BI 활용
@@ -71,7 +71,7 @@
     
     ```jsx
     let
-    	원본 = Json.Document(Web.Contents("[https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey=YTI0OTg5OTJjODIwOTBkM2M5ZjhiNTU0MjBhNzc0OTA=&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003](https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey=YTI0OTg5OTJjODIwOTBkM2M5ZjhiNTU0MjBhNzc0OTA=&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003)")),
+    	원본 = Json.Document(Web.Contents("[https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={your_key}&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003](https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&apiKey={your_key}&itmId=T+&objL1=T10&objL2=&objL3=&objL4=&objL5=&objL6=&objL7=&objL8=&format=json&jsonVD=Y&prdSe=M&startPrdDe=202001&endPrdDe=202212&orgId=101&tblId=DT_1J20003)")),
     	#"테이블로 변환됨" = Table.FromList(원본, Splitter.SplitByNothing(), null, null, ExtraValues.Error),
     	#"확장된 Column1" = Table.ExpandRecordColumn(#"테이블로 변환됨", "Column1", {"TBL_NM", "PRD_DE", "TBL_ID", "ITM_NM", "ITM_NM_ENG", "ITM_ID", "UNIT_NM", "ORG_ID", "UNIT_NM_ENG", "C1_OBJ_NM", "C1_OBJ_NM_ENG", "DT", "PRD_SE", "C1", "C1_NM", "C1_NM_ENG"}, {"Column1.TBL_NM", "Column1.PRD_DE", "Column1.TBL_ID", "Column1.ITM_NM", "Column1.ITM_NM_ENG", "Column1.ITM_ID", "Column1.UNIT_NM", "Column1.ORG_ID", "Column1.UNIT_NM_ENG", "Column1.C1_OBJ_NM", "Column1.C1_OBJ_NM_ENG", "Column1.DT", "Column1.PRD_SE", "Column1.C1", "Column1.C1_NM", "Column1.C1_NM_ENG"}),
     	#"제거된 열 수" = Table.RemoveColumns(#"확장된 Column1",{"Column1.PRD_SE", "Column1.C1", "Column1.C1_NM", "Column1.C1_NM_ENG", "Column1.ITM_ID", "Column1.UNIT_NM", "Column1.ORG_ID", "Column1.UNIT_NM_ENG", "Column1.C1_OBJ_NM", "Column1.C1_OBJ_NM_ENG", "Column1.TBL_ID", "Column1.TBL_NM"}),
@@ -104,7 +104,7 @@ xml 형식 R
     place <- c(90,93,95,98,99,100,101,102,104,105,106,108,112,114,115,119,121,127,129,130,131,133,135,136,137,138,140,143,146,152,155,156,159,162,165,168,169,170,172,174,177,184,185,188,189,192,201,202,203,211,212,216,217,221,226,232,235,236,238,239,243,244,245,247,248,251,252,253,254,255,257,258,259,260,261,262,263,264,266,268,271,272,273,276,277,
     278,279,281,283,284,285,288,289,294,295)
     
-    api <- paste0("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={KOSIS_TOKEN}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=",mindate,"&endDt=",maxdate,"&stnIds=",as.character(place[1]))
+    api <- paste0("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={your_key}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=",mindate,"&endDt=",maxdate,"&stnIds=",as.character(place[1]))
     
     api -> read_xml(api) %>% 
           as_list() %>% 
@@ -122,7 +122,7 @@ json 형식 R
 
 - kosis 펌
     
-    ```jsx
+    ```R
     library(httr)
     library(rvest)
     library(jsonlite)
@@ -131,7 +131,7 @@ json 형식 R
     rm(list = ls()) # 모든변수 초기화
     
     # 환경변수에 사용자 key 정의 (환경변수 편집 usethis::edit_r_environ() )
-    # KOSIS_TOKEN = ZjZjOTI3MjRjNmU1YzdhZTMwOWRjNjgxN2MzNDgwNmY=
+    # KOSIS_TOKEN = {your_key}
     v_apiKey = Sys.getenv('KOSIS_TOKEN')
     baseurl <- 'https://kosis.kr/openapi/statisticsData.do' # 요청URL
     
@@ -181,7 +181,7 @@ json 형식 파이썬
     rc('font', family=font)
     
     #url을 통해 json 데이터 가져오기
-    with urlopen("https://kosis.kr/openapi/statisticsData.do?method=getList&apiKey=ZjZjOTI3MjRjNmU1YzdhZTMwOWRjNjgxN2MzNDgwNmY=&format=json&jsonVD=Y&userStatsId=openapisample/101/DT_1IN1502/2/1/20191106094026_1&prdSe=Y&newEstPrdCnt=3") as url:
+    with urlopen("https://kosis.kr/openapi/statisticsData.do?method=getList&apiKey={your_key}&format=json&jsonVD=Y&userStatsId=openapisample/101/DT_1IN1502/2/1/20191106094026_1&prdSe=Y&newEstPrdCnt=3") as url:
         json_file = url.read()
     
     py_json = json.loads(json_file.decode('utf-8'))
@@ -215,7 +215,7 @@ POWER QUERY를 FOR 루프 처럼 사용하기 > 사용자 지정 함수 활용
     ```jsx
     
     let
-    	원본 = Xml.Tables(Web.Contents("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=20220101&endDt=20220102&stnIds=108")),
+    	원본 = Xml.Tables(Web.Contents("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={your_key}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt=20220101&endDt=20220102&stnIds=108")),
     	Table1 = 원본{1}[Table]
     in
     	Table1
@@ -227,7 +227,7 @@ POWER QUERY를 FOR 루프 처럼 사용하기 > 사용자 지정 함수 활용
     (지역 as text, mindate as text, maxdate as text) =>
     
     let
-    	원본 = Xml.Tables(Web.Contents("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey=zFPni23SNqBcj%2FDT2uy94UQzs6xqqgC3wswTRrHh5YaNUEJsrt1P6MEp9AcGuRZNcUtdWMYRLS8y0Q00sI5oOg%3D%3D&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt="& mindate &"&endDt="& maxdate &"&stnIds="&지역)),
+    	원본 = Xml.Tables(Web.Contents("http://apis.data.go.kr/1360000/AsosDalyInfoService/getWthrDataList?serviceKey={your_key}&numOfRows=500&pageNo=1&dataCd=ASOS&dateCd=DAY&startDt="& mindate &"&endDt="& maxdate &"&stnIds="&지역)),
     	Table1 = 원본{1}[Table]
     in
     	Table1
