@@ -257,4 +257,4 @@ POWER QUERY를 FOR 루프 처럼 사용하기 > 사용자 지정 함수 활용
 
 **통계청 open API 메뉴얼**
 
-[](https://kosis.kr/openapi/file/openApi_manual_v1.0.pdf)
+[메뉴얼](https://kosis.kr/openapi/file/openApi_manual_v1.0.pdf)
